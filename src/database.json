@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "123456",
+      "avtar": "",
+      "bio": "Software developer and tech enthusiast."
+    },
+    {
+      "id": "2d75",
+      "email": "jatavkhushi78@gmail.com",
+      "fullName": "Khushi Jatav",
+      "username": "khushi",
+      "password": "k123456",
+      "avatar": "",
+      "bio": ""
+    },
+    {
+      "id": "95a4",
+      "email": "demo@gmail.com",
+      "fullName": "demo",
+      "username": "demo12",
+      "password": "demo1234",
+      "avatar": "",
+      "bio": ""
+    },
+    {
+      "id": "130f",
+      "email": "moksh@gmail.com",
+      "fullName": "moksh",
+      "username": "moksh_12",
+      "password": "m123456",
+      "avatar": "",
+      "bio": ""
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Hello World",
+      "content": "This is my first post!",
+      "authorId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "authorId": 1,
+      "content": "Great post!"
+    }
+  ],
+  "followers": [
+    {
+      "id": "1",
+      "userId": 1,
+      "followerId": 2
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "senderId": 1,
+      "receiverId": 2,
+      "content": "Hello!"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": 1,
+      "message": "You have a new follower!"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
