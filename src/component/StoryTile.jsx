@@ -41,7 +41,7 @@
 
 
 
-export const StoryTile = ({ story, mystory = false,onOpenstory }) => {
+export const StoryTile = ({ story, mystory = false,onOpenstory,showName=true }) => {
   return (
     <div onClick={onOpenstory} className="flex size-24 flex-col items-center relative ">
       <div className="size-20 flex items-center overflow-visible justify-center rounded-full  border-3 border-gray-500/30">
@@ -56,9 +56,10 @@ export const StoryTile = ({ story, mystory = false,onOpenstory }) => {
           +
         </div>
       )}
-      <p className="truncate max-w-24 text-xs ">
+      {showName && <p className="truncate max-w-24 text-xs ">
         {story?.user.name || "nameet mandwal"}
-      </p>
+      </p>}
     </div>
   );
-};
+}
+
